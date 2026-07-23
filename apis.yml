@@ -1,8 +1,31 @@
 aid: 3vr
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/3vr.png
 name: 3VR
-description: '3VR is a company surfaced as a portfolio company of kleiner-perkins and added to the API
-  Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  3VR, Inc. was a San Francisco-based video intelligence and video
+  surveillance analytics company founded in 2005 and backed by Kleiner Perkins
+  among others. Its VisionPoint VMS and Video Intelligence Platform combined
+  video management with search-driven analytics including facial recognition,
+  license plate recognition, object tracking, dwell/loitering detection,
+  people counting, queue management, and forensic video search across IP,
+  analog, and megapixel cameras, with an open architecture for third-party
+  integration into POS, access control, and alarm systems. 3VR was acquired
+  by Identiv in 2018 (approximately $6.9M) and folded into Identiv's Hirsch
+  physical access control platform; Identiv's physical security business,
+  including the 3VR line, was subsequently divested to Vitaprotech in 2024.
+  The 3vr.com domain now redirects to Hirsch/Identiv support and no public
+  developer API is documented.
 url: https://raw.githubusercontent.com/api-evangelist/3vr/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +33,34 @@ x-backed-by:
 - kleiner-perkins
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: identiv
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
 - Enterprise
+- Video Analytics
+- Video Surveillance
+- Physical Security
+- Facial Recognition
+- Security
 apis: []
+common:
+- type: DomainSecurity
+  url: security/3vr-domain-security.yml
+- type: Website
+  url: https://3vr.com
+- type: Product
+  url: https://www.identiv.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
