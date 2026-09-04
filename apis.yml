@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://3vr.com', status: 301, note: 'declared website redirects to https://www.hirschsecure.com/us/en-us/support — a different registrable domain (3vr.com -> hirschsecure.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/3vr.png
 name: 3VR
 description: >-
